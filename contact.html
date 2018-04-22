@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic-Porfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="site">
+  <div class="wrapper"> <!--In case I want to implement a sticky footer again, but keeps breaking even with Mel's help-->
+<!--Nav Bar-->
+    <div class="navContainer">
+      <div class="topNav">
+        <div class="logo">
+          <h2>Jerauld Manansala</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">About</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="contactWrapper contactWrapperFix"> <!--Responsible for y-axis alignment of content-->
+<!--Contact Section-->
+      <div class="contactContainer"> <!--Holds the floats, basic structure, contact start-->
+        <div class="contactContent">
+
+          <h1>Contact</h1>
+
+          <hr>
+
+          <form action="/my-handling-form-page" method="post">
+            <div><label for="name">Name</label><br>
+              <input type="text" id="name" name="user_name" placeholder="John Doe">
+            </div>
+            <div><label for="mail">E-mail:</label><br>
+              <input type="email" id="mail" name="user_mail" placeholder="john@gmail.com">
+            </div>
+            <div><label for="msg">Message</label><br>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div>
+              <input type="submit" id="submit" name="user_submit">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+      <div class="connectContainer"> <!--Holds the floats, basic structure, connect start-->
+        <aside class="connectContent">
+
+          <h3>Connect with Me</h3>
+          <hr class="hr2">
+          <a href="https://github.com/jerauld" target="_blank"><img class="socialMedia marginFix" src="assets/images/github.png" alt="github social media icon" /></a>
+          <a href="https://www.linkedin.com/in/jerauld/" target="_blank"><img class="socialMedia" src="assets/images/linkedin.png" alt="linkedin social media icon" /></a>
+          <a href="https://meta.stackoverflow.com/users/9567363/jerauld" target="_blank"><img class="socialMedia" src="assets/images/stackoverflow.png" alt="stack overflow social media icon" /></a>
+
+        </aside>
+      </div>
+
+    </div>
+
+  </div>
+<!--Footer-->
+  <footer>Copyright &copy; 2018 Jerauld Manansala</footer>
+</body>
+
+</html>

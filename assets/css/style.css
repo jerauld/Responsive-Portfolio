@@ -1,0 +1,539 @@
+/* HTML, Body, General Fonts */
+
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/circles-light.png");
+    height: 100%;
+}
+
+h1, .logo {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+h1 {
+    color: #4aaaa5;
+}
+
+/* Top Navigation */
+
+.navContainer {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    z-index: 1;
+}
+
+.navContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topNav {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 28px 50px;
+    color: #fff;
+    background-color: #4aaaa5;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    margin-top: 30px;
+    padding: 0 16px;
+    font-size: 18px;
+    display: inline-block;
+    border-left: 1px solid #ddd;
+}
+
+nav li:last-child {
+    padding-right: 0;
+}
+
+nav li:first-child {
+    border-left: 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+/* Bio Content */
+
+.bioContainer {
+    background-color: #fff;
+    width: 960px;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 29px 0;
+    height: 3px;
+    background-color: #ddd;
+    border: 0;
+}
+
+.bioContent {
+    margin-top: 130px;
+    margin-bottom: 105px;
+    padding: 38px 31px;
+    border: solid 1px #ddd;
+}
+
+.bioPhoto {
+    height: 200px;
+    float: left;
+    margin: 0 25px 25px 0;
+    border: 1px solid #ddd;
+}
+
+p, form, input#submit {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 18px;
+    line-height: 1.8em;
+    margin-top: -8px;
+}
+
+/* Contact Content */
+
+.contactWrapper {
+    margin: 0 auto;
+    width: 960px;
+    margin-top: 130px;
+    margin-bottom: 105px;
+}
+
+.contactContainer {
+    background-color: #fff;
+    width: 641px;
+    float: left;
+    border: solid 1px #ddd;
+}
+
+hr {
+    margin: 29px 0;
+    height: 3px;
+    background-color: #ddd;
+    border: 0;
+}
+
+.contactContent {
+    padding: 38px 31px;
+}
+
+input#name, input#mail {
+    width: 574px;
+    height: 29px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: #ddd;
+    font-size: 13px;
+}
+
+textarea {
+    width: 572px;
+    height: 190px;
+    border: 1px solid #ddd;
+}
+
+input#submit { /* See 'Bio Content' section above for additional typography informaiton */
+    background-color: #4aaaab;
+    color: #eeeeee;
+    margin-top: 7px;
+    width: 100px;
+    border: 0;
+}
+
+.connectContainer {
+    background-color: #fff;
+    width: 266px;
+    height: 200px;
+    border: 1px solid #ddd;
+    float: right;
+}
+
+.connectContent {
+    margin: 29px 30px 0 29px;
+}
+
+.socialMedia {
+    height: 62px;
+    margin-left: 6px;
+}
+
+.marginFix {
+    margin-left: 0px;
+}
+
+.hr2 {
+    height: 2px;
+    background-color: #ddd;
+    border: 0;
+    margin: 21px 0 23px 0;
+}
+
+/* Portfolio Content */
+
+.portfolioWrapper {
+    margin: 0 auto;
+    width: 960px;
+    margin-top: 130px;
+    margin-bottom: 105px;
+}
+
+.portfolioContainer {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.portfolioContent {
+    padding: 38px 31px 0 31px;
+    border: solid 1px #ddd;
+}
+
+.portfolioContent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.projectSet {
+    position: relative;
+    width: 275px;
+    height: 206px;
+    margin: 0 35px 52px 0;
+    float: left;
+}
+
+.projectImage {
+    width: 275px;
+    height: 206px;
+}
+
+.projectCaption {
+    position: absolute;
+    bottom: 9px;
+    background-color: #4aaaa5;
+    width: 275px;
+    text-align: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25em;
+    padding: 21px 0;
+    color: #fff;
+}
+
+/* Sticky Footer Area */
+
+footer {
+    border-top: 8px solid #4aaaa5;
+    color: #ccc;
+    font-size: 0.8em;
+    background-color: #666;
+    padding: 22px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+These rules take effect when the browser's width
+is either 980px or less.
+*/
+
+@media screen and (max-width: 980px) {
+
+    /* Top Navigation - 980px */
+
+    .topNav {
+        width: 890px;
+        margin: 0 auto 0 40px;
+    }
+
+    /* Bio Content - 980px */
+
+    .bioContainer {
+        width: 585px;
+        margin: 0 auto 0 40px; 
+    }
+
+    .bioPhoto {
+        margin: 0 25px 10px 0;
+    }
+  
+    /* Contact Content - 980px */
+
+    .contactWrapper {
+        width: 890px;
+    }
+
+    .contactWrapperFix {
+        /* Fixes unusual +10 margins that suddenly show up */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contactContainer {
+        width: 585px;
+        height: 585px;
+        margin: 0 auto 0 40px; 
+    }
+
+    input#name, input#mail {
+        width: 520px;
+    }
+
+    textarea {
+        width: 518px; /* There is an unsual -4 pixel difference against inputs */
+    }
+
+    .connectContainer {
+        width: 210px;
+        height: 360px;
+        float: left;
+        margin-left: 40px;
+    }
+
+    .socialMedia {
+        margin: 0 18px 9px 0;
+    }
+
+    /* Portfolio Content - 980px */
+
+    .portfolioWrapper {
+        width: 585px;
+        margin: 0 auto 0 40px; 
+        margin-top: 130px;
+        margin-bottom: 105px;
+    }
+
+    .portfolioContent {
+        height: 782px;
+    }
+
+    .projectSet, .projectImage {
+        width: 243px;
+        height: 182px;
+    }
+
+    .projectSet-evenChild {
+        margin: 0 0 45px 35px;
+    }
+
+    .projectSet-oddChild {
+        margin: 0 0 45px 0;
+    }
+
+    .projectCaption {
+        width: 243px;
+    }
+
+  }
+
+/*
+These rules take effect when the browser's width
+is either 768 or less.
+*/
+
+    @media screen and (max-width: 768px) {
+
+/* Top Navigation - 768px */
+
+    .topNav {
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    /* Bio Content - 768px */
+
+    .bioContainer {
+        width: 730px;
+        margin: 0 auto; 
+    }
+
+    .bioContent {
+        height: 650px;
+    }
+
+    .bioPhoto {
+        height: 325px;
+        margin: 0 25px 10px 0;
+    }
+
+    /* Contact Content - 768px */
+
+    .contactWrapper {
+        width: 730px;
+        margin: 130px auto 105px auto;
+    }
+
+    .contactContainer {
+        width: 728px; /* -2px accounts for the 1px border on left + right */
+        float: none;
+        margin: 0 auto;
+    }
+
+    .connectContainer {
+        width: 300px;
+        float: none;
+        margin: 20px 0 0 0;
+        height: 200px;
+    }
+
+    .socialMedia {
+        margin: 0;
+    }
+
+    /* Portfolio Content - 768px */
+
+    .portfolioWrapper {
+        width: 730px;
+        margin: 130px auto 105px auto;
+    }
+
+    .portfolioContent {
+        height: 940px;
+    }
+
+    .projectSet, .projectImage {
+        width: 315px;
+        height: 235px;
+    }
+
+    .projectCaption {
+        width: 315px;
+    }
+
+}
+
+
+/*
+These rules take effect when the browser's width
+is either 640px or less.
+*/
+
+@media screen and (max-width: 640px) {
+
+    /* Top Navigation - 640px */
+   
+    .navContainer, footer {
+        position: static;
+    }
+    .topNav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo, nav {
+        margin: 0 auto 0 auto;
+        float: none;
+    }
+
+    nav li:last-child { 
+        padding: 0 16px; /* Now mirrors sibling padding for nav centering */
+    }
+
+    nav li {
+        margin-top: 23px;
+        margin-bottom: 23px;
+    }
+
+    /* Bio Content - 640px */
+
+    .bioContainer {
+        width: 600px;
+        margin: 20px auto 40px auto; 
+    }
+
+    .bioContent {
+        height: 1114px;
+        margin: 0;
+    }
+
+    .bioPhoto {
+        height: 533px;
+        margin: 0 0 18px 0;
+    }
+
+    /* Contact Content - 640px */
+
+     .contactWrapper {
+         width: 600px;
+         margin: 20px auto 40px auto; 
+     }
+
+     .contactContainer {
+         width: 598px;
+     }
+
+     input#name, input#mail, textarea {
+        width: 530px;
+    }
+
+    textarea { 
+        width: 528px; /* There is a -4 pixel difference against inputs */
+    }
+
+    /* Portfolio Content - 640px */
+
+    .portfolioWrapper {
+        width: 600px;
+        margin: 20px auto 40px auto; 
+    }
+
+    .portfolioContent {
+        height: 2300px;
+    }
+
+    .projectSet, .projectImage {
+        width: 536px;
+        height: 401px;
+        margin: 0 0 40px 0;
+    }
+
+    .projectCaption {
+        width: 536px;
+    }
+
+    /* Footer - 640px */
+
+    .site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      
+      .wrapper {
+        flex: 1;
+      }
+    
+}
