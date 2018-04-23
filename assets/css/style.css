@@ -470,61 +470,66 @@ is either 640px or less.
     /* Bio Content - 640px */
 
     .bioContainer {
-        width: 600px;
+        width: 100%;
         margin: 20px auto 40px auto; 
     }
 
     .bioContent {
-        height: 1114px;
+        height: 100%;
         margin: 0;
     }
 
     .bioPhoto {
-        height: 533px;
+        width: 100%;
+        height: auto;
         margin: 0 0 18px 0;
     }
 
     /* Contact Content - 640px */
 
      .contactWrapper {
-         width: 600px;
+         width: 100%;
          margin: 20px auto 40px auto; 
      }
 
      .contactContainer {
-         width: 598px;
+         width: 100%;
      }
 
      input#name, input#mail, textarea {
-        width: 530px;
+        width: 100%;
     }
 
     textarea { 
-        width: 528px; /* There is a -4 pixel difference against inputs */
+        width: 100%;
     }
 
     /* Portfolio Content - 640px */
 
     .portfolioWrapper {
-        width: 600px;
+        width: 100%;
         margin: 20px auto 40px auto; 
     }
 
     .portfolioContent {
-        height: 2300px;
+        height: 100%;
     }
 
     .projectSet, .projectImage {
-        width: 536px;
-        height: 401px;
+        width: 100%;
+        height: auto;
         margin: 0 0 40px 0;
     }
 
     .projectCaption {
-        width: 536px;
+        width: 100%;
     }
 
     /* Footer - 640px */
+
+    footer {
+        padding: 22px 0 22px 0; /*Centers the footer*/
+    }
 
     .site {
         display: flex;
